@@ -13,30 +13,33 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
+    max-height: 100%;
 }
 
 .bannerwrap {
     width: 40vw;
-}
-
-.banner {
+    background-image: url(img/Green.jpg);
+    background-position: center;
+    background-size: 200%;
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
-.logo {
-    width: 24vw;
-    top: 40px;
-    left: 40px;
+.logoBg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.589);
+    position: absolute;
+    top: 20vh;
+    width: 40vw;
 }
 
-.logoBg {
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.404);
-    position: relative;
-    top: 40px;
-    left: 40px;
+.logo {
+    width: 300px;
 }
+
 
 .discription {
     display: flex;
@@ -51,7 +54,7 @@ body {
 
 h2 {
     max-width: 36rem;
-    font-size: 18px;
+    font-size: 22px;
     text-align: left;
 }
 
@@ -81,22 +84,27 @@ input {
     width: 17rem;
     height: 2rem;
     padding-left: 0.5rem;
+    color: rgb(14, 90, 71);
+    font-size: 14px;
 }
 
 input:focus {
     background-color: rgb(206, 228, 222);
+    outline: none;
+    border: 2px solid rgb(14, 90, 71);
+}
+
+::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(140, 175, 166);
+    font-size: 14px;
 }
 
 label {
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 
-.col1,
-.col2 {
-    flex-direction: row;
-    padding: 0 1rem;
-}
 
 button {
     font-family: 'Lora', serif;
@@ -108,7 +116,7 @@ button {
     border-style: solid;
     border-color: rgb(14, 90, 71);
     border-radius: 1.2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
     transition: .3s;
 }
 
