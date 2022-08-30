@@ -24,34 +24,37 @@
                     Sign up <em>now</em> to get started. <br><br>
                     You <em>know</em> you want to.<br><br><br>
                     Let's do this!</h2>
-                <form action="post">
+                <form action="#">
                     <div class="inputwrap">
                         <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" class="firstName" placeholder="Marcus"><br>
+                        <input type="text" id="firstName" class="firstName" placeholder="Marcus" required>
                     </div>
                     <div class="inputwrap">
                         <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" class="lastName" placeholder="King"><br>
+                        <input type="text" id="lastName" class="lastName" placeholder="King" required>
                     </div>
                     <div class="inputwrap">
                         <label for="email">Email</label>
-                        <input type="email" id="email" class="email" placeholder="kingmarcus@signup.com"><br>
+                        <input type="email" id="email" class="email" placeholder="kingmarcus@signup.com" required>
                     </div>
                     <div class="inputwrap">
                         <label for="phoneNumber">Phone Number</label>
-                        <input type="text" id="phoneNumber" placeholder="+31957839228"><br>
+                        <input type="text" id="phoneNumber" placeholder="+31957839228" required>
                     </div>
                     <div class="inputwrap">
                         <label for="password">Password</label>
-                        <input type="password" id="password" class="password" placeholder=""><br>
+                        <input type="password" id="password" class="password" placeholder="" required>
                     </div>
                     <div class="inputwrap">
                         <label for="confirmPW">Confirm Password</label>
-                        <input type="password" id="confirmPW" class="confirmPW" placeholder=""><br>
+                        <input type="password" id="confirmPW" class="confirmPW" placeholder="" required>
+                    </div>
+                    <div class="buttonwrap">
+                        <button type="submit">Create Account</button>
                     </div>
                 </form>
 
-                <button type="submit">Create Account</button>
+
 
                 <p class="login">Already have an account? <a href="">Log in</a></p>
             </section>
