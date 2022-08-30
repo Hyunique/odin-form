@@ -11,39 +11,47 @@
 
     <body>
         <div class="wrapper">
-            <section class="banner">
-
+            <section class="bannerwrap">
+                <div class="logoBg">
+                    <img src="img/Logo-transparent.png" alt="" class="logo">
+                </div>
                 <img src="img/Green.jpg" alt="" class="banner">
-                <img src="" alt="" class="logo">
             </section>
 
             <section class="discription">
                 <h2>This is not a real online service. You know you need something like this in your life to help you
-                    realize deepest dreams. Sign up now to get started. You know you want to.</h2>
+                    realize deepest dreams. <br>
+                    Sign up <em>now</em> to get started. <br><br>
+                    You <em>know</em> you want to.<br><br><br>
+                    Let's do this!</h2>
                 <form action="post">
-                    <div class="col1">
-                        <label for="">First Name</label><br>
-                        <input type="text"><br>
-
-                        <label for="">Last Name</label><br>
-                        <input type="text"><br>
-
-                        <label for="">Email</label><br>
-                        <input type="email"><br>
+                    <div class="inputwrap">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" class="firstName" placeholder="Marcus"><br>
                     </div>
-                    <div class="col2">
-                        <label for="">Phone Number</label><br>
-                        <input type="text"><br>
-
-                        <label for="">Password</label><br>
-                        <input type="password"><br>
-
-                        <label for="">Confirm Password</label><br>
-                        <input type="password"><br>
+                    <div class="inputwrap">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" class="lastName" placeholder="King"><br>
                     </div>
-
+                    <div class="inputwrap">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="email" placeholder="kingmarcus@signup.com"><br>
+                    </div>
+                    <div class="inputwrap">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" id="phoneNumber" placeholder="+31957839228"><br>
+                    </div>
+                    <div class="inputwrap">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="password" placeholder=""><br>
+                    </div>
+                    <div class="inputwrap">
+                        <label for="confirmPW">Confirm Password</label>
+                        <input type="password" id="confirmPW" class="confirmPW" placeholder=""><br>
+                    </div>
                 </form>
-                <button>Create Account</button>
+
+                <button type="submit">Create Account</button>
 
                 <p class="login">Already have an account? <a href="">Log in</a></p>
             </section>

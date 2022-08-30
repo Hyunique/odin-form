@@ -4,6 +4,7 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
+    font-family: 'Lora', serif;
     /* background-image: url("img/white-wall-texture.jpg");
     background-size: 100vw 80%; */
 }
@@ -12,43 +13,89 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+
+}
+
+.bannerwrap {
+    width: 40vw;
 }
 
 .banner {
-    flex-direction: row;
-    width: 40vw;
     height: 100vh;
+}
 
+.logo {
+    width: 24vw;
+    top: 40px;
+    left: 40px;
+}
+
+.logoBg {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.404);
+    position: relative;
+    top: 40px;
+    left: 40px;
 }
 
 .discription {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: flex-start;
-    width: 50vw;
+    align-content: center;
+    width: 55vw;
     padding: 1.7rem;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
+h2 {
+    max-width: 36rem;
+    font-size: 18px;
+    text-align: left;
+}
+
+
+
 form {
-    font-family: 'Open Sans', sans-serif;
+    max-width: 36rem;
     display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     padding-bottom: 2rem;
 }
 
-.col1 {
-    flex-direction: row;
-    min-width: 50%;
+.inputwrap {
+    display: flex;
+    flex-flow: column wrap;
 }
 
+input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(140, 175, 166);
+    border-radius: .3rem;
+    width: 17rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+}
+
+input:focus {
+    background-color: rgb(206, 228, 222);
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.col1,
 .col2 {
     flex-direction: row;
-    max-width: 50%
-}
-
-
-h2 {
-    font-family: 'Lora', serif;
-    font-size: 20px;
+    padding: 0 1rem;
 }
 
 button {
@@ -69,10 +116,11 @@ button:hover {
     background-color: rgb(14, 90, 71);
     color: white;
     transition: .3s;
+    cursor: pointer;
 }
 
 .login {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 a {
