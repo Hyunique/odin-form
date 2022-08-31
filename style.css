@@ -170,4 +170,38 @@ a:hover {
 }
 
 
-/*todo : screen sizes, validation
+@media (max-width: 1280px) {
+    .wrapper {
+        max-height: 100%;
+        margin: 0;
+    }
+
+    .bannerwrap {
+        width: 100vw;
+        background-size: 100%;
+        height: 30vh;
+    }
+
+    .logoBg {
+        top: 6rem;
+        width: 100vw;
+    }
+
+    .logo {
+        width: 30vw;
+    }
+
+    .discription {
+        width: 100vw;
+        padding: 2rem;
+
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    form {
+        justify-content: center;
+    }
+}
