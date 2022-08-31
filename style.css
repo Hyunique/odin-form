@@ -95,7 +95,7 @@ input {
     padding-left: 0.5rem;
     color: var(--main-color);
     font-size: 14px;
-    margin-bottom: 1.2rem;
+
 }
 
 input:focus {
@@ -118,6 +118,13 @@ input:focus:invalid {
 label {
     font-family: var(--sans-serif);
     font-size: 14px;
+    margin-top: 1.2rem;
+}
+
+.error {
+    color: var(--error-color);
+    font-family: var(--sans-serif);
+    height: 12px;
 }
 
 .buttonwrap {
