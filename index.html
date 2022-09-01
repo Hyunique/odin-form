@@ -7,6 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>Sign-up</title>
+
+        //regexp => https://www.html5pattern.com/
     </head>
 
     <body>
@@ -47,7 +49,8 @@
                     </div>
                     <div class="inputwrap">
                         <label for="password">Password</label>
-                        <input type="password" id="password" class="password" placeholder="" required>
+                        <input type="password" id="password" class="password"
+                            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="" required>
                         <span class="error"></span>
                     </div>
                     <div class="inputwrap">
